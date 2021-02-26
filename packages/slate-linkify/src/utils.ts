@@ -112,6 +112,8 @@ export const onKeyDown = (event: KeyboardEvent, editor: ReactEditor): void => {
       });
       wrapLink(editor, link.url);
     });
+
+    Transforms.move(editor, { edge: 'end' });
   }
 };
 
